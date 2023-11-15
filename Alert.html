@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Shaa</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="dark.css" />
+  </head>
+  <body>
+    <script>
+      //////////////
+      Swal.fire({
+        allowOutsideClick: true,
+        title: "Namamu Rika kan?",
+        icon: "question",
+        showCancelButton: false,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Ya...?",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Alert Langsung atau Perkenalan ?
+          Swal.fire({
+            allowOutsideClick: false,
+            title: "",
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: "Kau siapa ya?",
+            denyButtonText: "Yang bener saja, langsung saja ke inti😡😤!!!",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              // Alert Perkenalan
+              Swal.fire({
+                allowOutsideClick: false,
+                title: "Nama ku Koji, aku pacarmu 😆😋",
+                icon: "",
+                showConfirmButton: true,
+                confirmButtonText: "Terus?",
+              }).then((result) => {
+                // Alert Hehe
+                Swal.fire({
+                  allowOutsideClick: false,
+                  icon: "info",
+                  showConfirmButton: true,
+                  confirmButtonText: "Hmm",
+                  title:
+                    "Hehe, anu aku tau kamu marah. Mungkin masi marah, lebih ke kesel ya? eum ini aku sedikit buat project buat ayang aku hehe semoga kamu suka",
+                }).then((result) => {
+                  // Alert Permintaan maaf
+                  Swal.fire({
+                    allowOutsideClick: false,
+                    title:
+                      "Tapi sebelum lanjut, maafin aku dulu bole ndak? ya supaya kamu lihatnya ga sambil kebawa emosi",
+                    icon: "warning",
+                    showDenyButton: true,
+                    showCancelButton: false,
+                    denyButtonText: "Ogah",
+                    confirmButtonText: "Iya sayang, dimaafin kok",
+                    confirmButtonColor: "#3085d6",
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      // Alert yey
+                      Swal.fire({
+                        allowOutsideClick: false,
+                        showConfirmButton: true,
+                        confirmButtonText: "Iyaaa, sama-sama sayang",
+                        title: "Ih ayangg 😘",
+                        text: "Hiks maaci yaaaa, love-love deh",
+                        icon: "success",
+                      }).then((result) => {
+                        const Toast = Swal.mixin({
+                          toast: true,
+                          showConfirmButton: false,
+                          timer: 3000,
+                          timerProgressBar: true,
+                        });
+                        Toast.fire({
+                          icon: "success",
+                          title: "Launching the suprise",
+                        });
+                        setTimeout(function () {
+                          window.location.href = "index.html";
+                        }, 3000);
+                      });
+                    } else {
+                      // Alert oh
+                      Swal.fire({
+                        allowOutsideClick: false,
+                        showConfirmButton: true,
+                        confirmButtonText: "Nyenyenyenye",
+                        title: "Oh gitu? 😒",
+                        text: "",
+                        icon: "error",
+                      }).then((result) => {
+                        const Toast = Swal.mixin({
+                          toast: true,
+                          showConfirmButton: false,
+                          timer: 3000,
+                          timerProgressBar: true,
+                        });
+                        Toast.fire({
+                          icon: "success",
+                          title: "Launching the suprise",
+                        });
+                        setTimeout(function () {
+                          window.location.href = "index.html";
+                        }, 3000);
+                      });
+                    }
+                  });
+                });
+              });
+            }
+
+            // Batas if
+            else {
+              // Alert text Hehe
+              Swal.fire({
+                allowOutsideClick: false,
+                icon: "info",
+                showConfirmButton: true,
+                confirmButtonText: "Hmm",
+                title:
+                  "Hehe, anu aku tau kamu marah. Mungkin masi marah, lebih ke kesel ya? eum ini aku sedikit buat project buat ayang aku hehe semoga kamu suka",
+              }).then((result) => {
+                // Alert Permintaan maaf
+                Swal.fire({
+                  allowOutsideClick: false,
+                  title:
+                    "Tapi sebelum lanjut, maafin aku dulu bole ndak? ya supaya kamu lihatnya ga sambil kebawa emosi",
+                  icon: "warning",
+                  showDenyButton: true,
+                  showCancelButton: false,
+                  denyButtonText: "Ogah",
+                  confirmButtonText: "Iya sayang, dimaafin kok",
+                  confirmButtonColor: "#3085d6",
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    // Alert yey
+                    Swal.fire({
+                      allowOutsideClick: false,
+                      showConfirmButton: true,
+                      confirmButtonText: "Iyaaa, sama-sama sayang",
+                      title: "Ih ayangg 😘",
+                      text: "Hiks maaci yaaaa, love-love deh",
+                      icon: "success",
+                    }).then((result) => {
+                      const Toast = Swal.mixin({
+                        toast: true,
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                      });
+                      Toast.fire({
+                        icon: "success",
+                        title: "Launching the suprise",
+                      });
+                      setTimeout(function () {
+                        window.location.href = "index.html";
+                      }, 3000);
+                    });
+                  } else {
+                    // Alert oh
+                    Swal.fire({
+                      allowOutsideClick: false,
+                      showConfirmButton: true,
+                      confirmButtonText: "Nyenyenyenye",
+                      title: "Oh gitu? 😒",
+                      text: "",
+                      icon: "error",
+                    }).then((result) => {
+                      const Toast = Swal.mixin({
+                        toast: true,
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                      });
+                      Toast.fire({
+                        icon: "success",
+                        title: "Launching the suprise",
+                      });
+                      setTimeout(function () {
+                        window.location.href = "index.html";
+                      }, 3000);
+                    });
+                  }
+                });
+              });
+            }
+          });
+        }
+        // P
+      });
+    </script>
+  </body>
+</html>
